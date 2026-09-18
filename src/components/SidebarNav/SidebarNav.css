@@ -47,6 +47,12 @@
   border-color: #ffffff;
 }
 
+.sidebar-links a.active {
+  background-color: #ffffff;
+  border-color: #ffffff;
+  transform: scale(1.4);
+}
+
 .sidebar-links a::after {
   content: attr(aria-label);
 
