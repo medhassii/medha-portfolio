@@ -13,7 +13,7 @@ const navItems = [
     <nav className="navbar">
       <h2 className="navbar-logo">Medha</h2>
 
-      <ul>
+      <ul className="navbar-links">
         {navItems.map((item) => (
           <li key={item.id}>
             <a href={`#${item.id}`}>{item.name}</a>

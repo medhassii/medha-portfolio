@@ -1,0 +1,30 @@
+.intro {
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.intro-content {
+  max-width: 800px;
+}
+
+.intro-greeting {
+  font-size: 24px;
+}
+
+.intro h1 {
+  font-size: 80px;
+  margin: 10px 0;
+}
+
+.intro-role {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.intro-description {
+  font-size: 18px;
+  margin-top: 20px;
+}
