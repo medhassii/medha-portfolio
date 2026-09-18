@@ -6,7 +6,7 @@ import Experience from "./components/Experience/Experience";
 import Projects from "./components/Projects/Projects";
 import Skills from "./components/Skills/Skills";
 import Contact from "./components/Contact/Contact";
-
+import GameButton from "./components/GameButton/GameButton";
 
 function App() {
   return (
@@ -19,6 +19,8 @@ function App() {
       <Projects />
       <Skills />
       <Contact />
+      
+      <GameButton />
     </div>
   );
 }
