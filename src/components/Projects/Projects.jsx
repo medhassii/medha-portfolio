@@ -1,32 +1,44 @@
 import "./Projects.css";
 
 function Projects() {
-  const projects = [
-    {
-      title: "Project One",
-      description:
-        "A web application built to solve a real-world problem.",
-      technologies: ["React", "JavaScript", "CSS"],
-      github: "#",
-      demo: "#",
-    },
-    {
-      title: "Project Two",
-      description:
-        "A full-stack application with a frontend and backend.",
-      technologies: ["React", "Node.js", "MongoDB"],
-      github: "#",
-      demo: "#",
-    },
-    {
-      title: "Project Three",
-      description:
-        "An application demonstrating API integration and asynchronous data handling.",
-      technologies: ["JavaScript", "API", "HTML", "CSS"],
-      github: "#",
-      demo: "#",
-    },
-  ];
+ const projects = [
+  {
+    title: "Face Recognition App",
+    image: "/src/assets/hero.png",
+    description:
+      "A React application that detects and highlights faces in uploaded images using a face-recognition API.",
+    technologies: ["React", "JavaScript", "API"],
+    github: "#",
+    demo: "#",
+  },
+  {
+    title: "Podcast Player",
+    image: "/src/assets/hero.png",
+    description:
+      "A web application for playing and managing podcast content with a JavaScript and Node.js backend.",
+    technologies: ["JavaScript", "Node.js", "Express"],
+    github: "#",
+    demo: "#",
+  },
+  {
+    title: "Proxy Pantry API",
+    image: "/src/assets/hero.png",
+    description:
+      "A backend application demonstrating REST API development, server-side logic, and database integration.",
+    technologies: ["Node.js", "Express", "MongoDB"],
+    github: "#",
+    demo: "#",
+  },
+  {
+    title: "Flask OpenAI Project",
+    image: "/src/assets/hero.png",
+    description:
+      "A Flask application connected to MongoDB and an external AI API, demonstrating backend API integration.",
+    technologies: ["Python", "Flask", "MongoDB", "API"],
+    github: "#",
+    demo: "#",
+  },
+];
 
   return (
     <section id="projects" className="projects">
@@ -36,6 +48,11 @@ function Projects() {
         <div className="projects-grid">
           {projects.map((project) => (
             <article className="project-card" key={project.title}>
+             {project.image && (
+             <div className="project-image">
+                <img src={project.image} alt={project.title} />
+             </div>
+        )}
               <h3>{project.title}</h3>
 
               <p>{project.description}</p>
