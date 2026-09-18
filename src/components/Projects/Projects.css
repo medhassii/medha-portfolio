@@ -22,6 +22,32 @@
   gap: 30px;
 }
 
+.featured-project {
+  grid-column: 1 / -1;
+}
+
+.featured-project .project-image {
+  height: 400px;
+}
+
+.featured-project h3 {
+  font-size: 36px;
+}
+
+@media (max-width: 700px) {
+  .featured-project {
+    grid-column: auto;
+  }
+
+  .featured-project .project-image {
+    height: 250px;
+  }
+
+  .featured-project h3 {
+    font-size: 27px;
+  }
+}
+
 .project-card {
   padding: 35px;
 
