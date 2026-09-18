@@ -1,3 +1,5 @@
+import "./Navbar.css";
+
 function Navbar() {
 const navItems = [
   { name: "Home", id: "home" },
@@ -8,8 +10,8 @@ const navItems = [
     { name: "Contact", id: "contact" },
 ];
   return (
-    <nav>
-      <h2>Medha</h2>
+    <nav className="navbar">
+      <h2 className="navbar-logo">Medha</h2>
 
       <ul>
         {navItems.map((item) => (
