@@ -1,15 +1,22 @@
 function Navbar() {
+const navItems = [
+  { name: "Home", id: "home" },
+    { name: "About", id: "about" },
+    { name: "Experience", id: "experience" },
+    { name: "Projects", id: "projects" },
+    { name: "Skills", id: "skills" },
+    { name: "Contact", id: "contact" },
+];
   return (
     <nav>
       <h2>Medha</h2>
 
       <ul>
-        <li>Home</li>
-        <li>About</li>
-        <li>Experience</li>
-        <li>Projects</li>
-        <li>Skills</li>
-        <li>Contact</li>
+        {navItems.map((item) => (
+          <li key={item.id}>
+            <a href={`#${item.id}`}>{item.name}</a>
+          </li>
+        ))}
       </ul>
     </nav>
   );
