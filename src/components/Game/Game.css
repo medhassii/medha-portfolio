@@ -1,0 +1,109 @@
+.game-overlay {
+  position: fixed;
+
+  inset: 0;
+
+  z-index: 2000;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 30px;
+
+  background: rgba(0, 0, 0, 0.9);
+}
+
+.game-window {
+  position: relative;
+
+  width: 100%;
+  max-width: 700px;
+  min-height: 400px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  padding: 50px;
+
+  border: 1px solid #444444;
+
+  background: #101010;
+
+  text-align: center;
+}
+
+.game-window h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.game-window p {
+  max-width: 500px;
+
+  line-height: 1.7;
+
+  opacity: 0.6;
+}
+
+.game-close {
+  position: absolute;
+
+  top: 15px;
+  right: 20px;
+
+  border: none;
+
+  background: transparent;
+  color: #ffffff;
+
+  font-size: 30px;
+
+  cursor: pointer;
+
+  transition: opacity 0.2s ease;
+}
+
+.game-close:hover {
+  opacity: 0.5;
+}
+
+.robot {
+  margin-top: 35px;
+
+  font-size: 80px;
+
+  animation: robotFloat 2s ease-in-out infinite;
+}
+
+@keyframes robotFloat {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-12px);
+  }
+}
+
+@media (max-width: 600px) {
+  .game-overlay {
+    padding: 15px;
+  }
+
+  .game-window {
+    min-height: 350px;
+    padding: 35px 20px;
+  }
+
+  .game-window h2 {
+    font-size: 30px;
+  }
+
+  .robot {
+    font-size: 60px;
+  }
+}
