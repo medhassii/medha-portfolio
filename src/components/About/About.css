@@ -1,22 +1,46 @@
 .about {
   min-height: 100vh;
+
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 80px 20px;
+
+  padding: 120px 30px;
 }
 
 .about-content {
-  max-width: 800px;
+  width: 100%;
+  max-width: 900px;
 }
 
 .about h2 {
-  font-size: 48px;
-  margin-bottom: 30px;
+  font-size: clamp(45px, 7vw, 80px);
+  line-height: 1;
+  letter-spacing: -3px;
+  margin-bottom: 50px;
 }
 
 .about p {
-  font-size: 18px;
-  line-height: 1.8;
-  margin-bottom: 20px;
+  max-width: 750px;
+
+  font-size: 19px;
+  line-height: 1.9;
+
+  margin-bottom: 25px;
+  opacity: 0.65;
+}
+
+@media (max-width: 600px) {
+  .about {
+    padding: 100px 20px;
+  }
+
+  .about h2 {
+    letter-spacing: -2px;
+    margin-bottom: 35px;
+  }
+
+  .about p {
+    font-size: 16px;
+  }
 }

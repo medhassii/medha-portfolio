@@ -8,9 +8,9 @@ function Intro() {
 
         <h1>Medha</h1>
 
-        <p className="intro-role">
-          Full Stack Developer
-        </p>
+       <p className="intro-role">
+  Full Stack Developer
+</p>
 
         <p className="intro-description">
           I build web applications using modern technologies.

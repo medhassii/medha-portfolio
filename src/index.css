@@ -9,7 +9,18 @@ html {
 }
 
 body {
+  margin: 0;
   font-family: Arial, sans-serif;
-  background-color: #ffffff;
-  color: #111111;
+  background: #0b0b0b;
+  color: #ffffff;
+}
+
+a {
+  color: inherit;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
 }

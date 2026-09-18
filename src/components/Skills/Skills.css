@@ -1,16 +1,19 @@
 .skills {
   min-height: 100vh;
-  padding: 100px 20px;
+  padding: 120px 30px;
 }
 
 .skills-content {
+  width: 100%;
   max-width: 1000px;
   margin: 0 auto;
 }
 
 .skills h2 {
-  font-size: 48px;
-  margin-bottom: 50px;
+  font-size: clamp(45px, 7vw, 80px);
+  line-height: 1;
+  letter-spacing: -3px;
+  margin-bottom: 70px;
 }
 
 .skills-grid {
@@ -21,13 +24,15 @@
 
 .skill-category {
   padding: 30px;
-  border: 1px solid #dddddd;
-  border-radius: 8px;
+
+  border: 1px solid #2a2a2a;
+  background: #101010;
 }
 
 .skill-category h3 {
-  font-size: 24px;
-  margin-bottom: 20px;
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 25px;
 }
 
 .skill-list {
@@ -38,12 +43,32 @@
 
 .skill-list span {
   padding: 8px 14px;
-  border: 1px solid #111111;
-  border-radius: 4px;
-  font-size: 14px;
+
+  border: 1px solid #333333;
+
+  font-size: 13px;
+  opacity: 0.7;
+
+  transition:
+    opacity 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.skill-list span:hover {
+  opacity: 1;
+  border-color: #ffffff;
 }
 
 @media (max-width: 600px) {
+  .skills {
+    padding: 100px 20px;
+  }
+
+  .skills h2 {
+    letter-spacing: -2px;
+    margin-bottom: 50px;
+  }
+
   .skills-grid {
     grid-template-columns: 1fr;
   }
