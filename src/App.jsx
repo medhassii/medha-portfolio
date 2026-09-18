@@ -2,6 +2,7 @@ import Navbar from "./components/Navbar/Navbar";
 import SidebarNav from "./components/SidebarNav/SidebarNav";
 import Intro from "./components/Intro/Intro";
 import About from "./components/About/About";
+import Experience from "./components/Experience/Experience";
 
 function App() {
   return (
@@ -10,10 +11,7 @@ function App() {
       < SidebarNav />
       <Intro />
       <About />
-
-      <section id="experience">
-        <h1>Experience</h1>
-      </section>
+      <Experience />
 
       <section id="projects">
         <h1>Projects</h1>
