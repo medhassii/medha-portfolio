@@ -1,6 +1,7 @@
 import Navbar from "./components/Navbar/Navbar";
-import Intro from "./components/Intro/Intro";
 import SidebarNav from "./components/SidebarNav/SidebarNav";
+import Intro from "./components/Intro/Intro";
+import About from "./components/About/About";
 
 function App() {
   return (
@@ -8,10 +9,7 @@ function App() {
       <Navbar />
       < SidebarNav />
       <Intro />
-
-      <section id="about">
-        <h1>About</h1>
-      </section>
+      <About />
 
       <section id="experience">
         <h1>Experience</h1>
