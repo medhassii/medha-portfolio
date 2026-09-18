@@ -1,10 +1,12 @@
 import Navbar from "./components/Navbar/Navbar";
 import Intro from "./components/Intro/Intro";
+import SidebarNav from "./components/SidebarNav/SidebarNav";
 
 function App() {
   return (
     <div>
       <Navbar />
+      < SidebarNav />
       <Intro />
 
       <section id="about">
